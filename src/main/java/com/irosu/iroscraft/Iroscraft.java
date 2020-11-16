@@ -3,10 +3,9 @@ package com.irosu.iroscraft;
 import com.irosu.iroscraft.util.RegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.material.Material;
-import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -31,8 +30,6 @@ public class Iroscraft
     private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "iroscraft";
 
-    public static Item item;
-
     public Iroscraft() {
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
@@ -48,6 +45,14 @@ public class Iroscraft
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
+
+    public static final ItemGroup TAB = new ItemGroup("iroscraftTab") {
+
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(RegistryHandler.SERANDITE.get());
+        }
+    };
 
     private void setup(final FMLCommonSetupEvent event)
     {
