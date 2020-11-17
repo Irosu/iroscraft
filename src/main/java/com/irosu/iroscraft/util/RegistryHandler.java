@@ -25,8 +25,10 @@ public class RegistryHandler {
     public static final RegistryObject<Item> SERANDITE = ITEMS.register("serandite", ItemBase::new);
 
     //Blocks
-    public static final RegistryObject<Block> SERANDITE_ORE_BLOCK = BLOCKS.register("serandite_ore_block", SeranditeOre::new);
+    public static final RegistryObject<Block> SERANDITE_ORE = BLOCKS.register("serandite_ore", SeranditeOre::new);
+    public static final RegistryObject<Block> SERANDITE_BLOCK = BLOCKS.register("serandite_block", SeranditeOre::new);
 
     //Block Items
-    public static final RegistryObject<Item> SERANDITE_ORE_BLOCK_ITEM = ITEMS.register("serandite_ore_block", () -> new BlockItemBase(SERANDITE_ORE_BLOCK.get()));
+    public static final RegistryObject<Item> SERANDITE_ORE_BI = ITEMS.register("serandite_ore", () -> new BlockItemBase(SERANDITE_ORE.get()));
+    public static final RegistryObject<Item> SERANDITE_BLOCK_BI = ITEMS.register("serandite_block", () -> new BlockItemBase(SERANDITE_BLOCK.get()));
 }

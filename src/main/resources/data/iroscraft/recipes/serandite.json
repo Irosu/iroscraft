@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "iroscraft:serandite_ore"
+  },
+  "result": "iroscraft:serandite",
+  "experience": 1.0,
+  "cookingtime": 200
+}

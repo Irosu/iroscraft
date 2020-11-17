@@ -3,7 +3,6 @@ package com.irosu.iroscraft;
 import com.irosu.iroscraft.util.RegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
