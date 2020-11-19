@@ -9,7 +9,12 @@ import java.util.function.Supplier;
 public enum EntheriteItemTier implements IItemTier {
 
     ENTHERITE(3, 100, 10.0f, 0.0f, 12, () -> {
-        return Ingredient.fromItems(RegistryHandler.ENTHERITE_PICKAXE.get());
+        return Ingredient.fromItems(
+                RegistryHandler.ENTHERITE_AXE.get(),
+                RegistryHandler.ENTHERITE_HOE.get(),
+                RegistryHandler.ENTHERITE_PICKAXE.get(),
+                RegistryHandler.ENTHERITE_SHOVEL.get(),
+                RegistryHandler.ENTHERITE_SWORD.get());
     });
 
     private final int HARVEST_LEVEL;

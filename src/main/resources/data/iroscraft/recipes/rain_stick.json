@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "iii",
+    "gbg",
+    " b "
+  ],
+  "key":
+  {
+    "i":
+    {
+      "item": "minecraft:iron_nugget"
+    },
+    "g":
+    {
+      "item": "minecraft:ghast_tear"
+    },
+    "b":
+    {
+      "item": "minecraft:bamboo"
+    }
+  },
+  "result":
+  {
+    "item": "iroscraft:rain_stick",
+    "count": 1
+  }
+}

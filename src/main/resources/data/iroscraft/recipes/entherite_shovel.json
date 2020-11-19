@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " e ",
+    " b ",
+    " b "
+  ],
+  "key":
+  {
+    "e":
+    {
+      "item": "iroscraft:entherite_ingot"
+    },
+    "b":
+    {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result":
+  {
+    "item": "iroscraft:entherite_shovel",
+    "count": 1
+  }
+}
