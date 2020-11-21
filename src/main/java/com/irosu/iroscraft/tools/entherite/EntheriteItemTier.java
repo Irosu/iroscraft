@@ -1,4 +1,4 @@
-package com.irosu.iroscraft.tools;
+package com.irosu.iroscraft.tools.entherite;
 
 import com.irosu.iroscraft.util.RegistryHandler;
 import net.minecraft.item.IItemTier;
