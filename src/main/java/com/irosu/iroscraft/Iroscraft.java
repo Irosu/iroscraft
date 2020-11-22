@@ -49,7 +49,7 @@ public class Iroscraft
 
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(RegistryHandler.SERANDITE.get());
+            return new ItemStack(RegistryHandler.FULGURITE_ORE.get());
         }
     };
 

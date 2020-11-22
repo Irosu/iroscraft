@@ -2,6 +2,8 @@ package com.irosu.iroscraft.util;
 
 import com.irosu.iroscraft.Iroscraft;
 import com.irosu.iroscraft.blocks.BlockItemBase;
+import com.irosu.iroscraft.blocks.FulguriteOre;
+import com.irosu.iroscraft.blocks.SeranditeBlock;
 import com.irosu.iroscraft.blocks.SeranditeOre;
 import com.irosu.iroscraft.items.ItemBase;
 import com.irosu.iroscraft.items.RainStick;
@@ -24,16 +26,20 @@ public class RegistryHandler {
     }
 
     //Items
+    public static final RegistryObject<Item> FULGURITE = ITEMS.register("fulgurite", ItemBase::new);
     public static final RegistryObject<Item> ENTHERITE_INGOT = ITEMS.register("entherite_ingot", ItemBase::new);
     public static final RegistryObject<Item> SERANDITE = ITEMS.register("serandite", ItemBase::new);
+    //public static final RegistryObject<Item> RAIN_STICK = ITEMS.register("rain_stick", RainStick::new);
 
     //Blocks
-    public static final RegistryObject<Block> SERANDITE_BLOCK = BLOCKS.register("serandite_block", SeranditeOre::new);
+    public static final RegistryObject<Block> SERANDITE_BLOCK = BLOCKS.register("serandite_block", SeranditeBlock::new);
     public static final RegistryObject<Block> SERANDITE_ORE = BLOCKS.register("serandite_ore", SeranditeOre::new);
+    public static final RegistryObject<Block> FULGURITE_ORE = BLOCKS.register("fulgurite_ore", FulguriteOre::new);
 
     //Block Items
     public static final RegistryObject<Item> SERANDITE_BLOCK_BI = ITEMS.register("serandite_block", () -> new BlockItemBase(SERANDITE_BLOCK.get()));
     public static final RegistryObject<Item> SERANDITE_ORE_BI = ITEMS.register("serandite_ore", () -> new BlockItemBase(SERANDITE_ORE.get()));
+    public static final RegistryObject<Item> FULGURITE_ORE_BI = ITEMS.register("fulgurite_ore", () -> new BlockItemBase(FULGURITE_ORE.get()));
 
     //Tools
     public static final  RegistryObject<AxeItem> ENTHERITE_AXE = ITEMS.register("entherite_axe",

@@ -7,6 +7,7 @@ import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 
 public class SeranditeOre extends Block {
+
     public SeranditeOre() {
         super(AbstractBlock.Properties.create(Material.IRON)
                 .hardnessAndResistance(5.0f, 6.0f)
