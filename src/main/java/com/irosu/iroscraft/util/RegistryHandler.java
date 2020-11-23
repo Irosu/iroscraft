@@ -31,6 +31,10 @@ public class RegistryHandler {
     public static final RegistryObject<Item> ENTHERITE_INGOT = ITEMS.register("entherite_ingot", ItemBase::new);
     public static final RegistryObject<Item> SERANDITE = ITEMS.register("serandite", ItemBase::new);
 
+    public static final RegistryObject<Item> RAIN_STICK = ITEMS.register("rain_stick", RainStick::new);
+    public static final RegistryObject<Item> RAIN_STICK_DRY = ITEMS.register("rain_stick_dry", ItemBase::new);
+    public static final RegistryObject<Item> SUN_STICK = ITEMS.register("sun_stick", SunStick::new);
+
     //Blocks
     public static final RegistryObject<Block> SERANDITE_BLOCK = BLOCKS.register("serandite_block", SeranditeBlock::new);
     public static final RegistryObject<Block> SERANDITE_ORE = BLOCKS.register("serandite_ore", SeranditeOre::new);
@@ -61,7 +65,4 @@ public class RegistryHandler {
     public static final  RegistryObject<SwordItem> ENTHERITE_SWORD = ITEMS.register("entherite_sword",
             () -> new EntheriteSword(EntheriteItemTier.ENTHERITE, 0, -2.0f,
                     new Item.Properties().group(Iroscraft.TAB)));
-
-    public static final RegistryObject<Item> RAIN_STICK = ITEMS.register("rain_stick", RainStick::new);
-    public static final RegistryObject<Item> SUN_STICK = ITEMS.register("sun_stick", SunStick::new);
 }

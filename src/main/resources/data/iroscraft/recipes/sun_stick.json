@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    "g",
-    "gd",
-    "g"
+    "g  ",
+    "gd ",
+    "g  "
   ],
   "key":
   {
@@ -14,12 +14,12 @@
     },
     "d":
     {
-      "item": "minecraft:sun_stick_dry"
+      "item": "iroscraft:rain_stick_dry"
     }
   },
   "result":
   {
-    "item": "iroscraft:rain_stick",
+    "item": "iroscraft:sun_stick",
     "count": 1
   }
 }
