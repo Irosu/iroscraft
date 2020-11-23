@@ -2,23 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    "iii",
-    "gbg",
-    " b "
+    "g",
+    "gd",
+    "g"
   ],
   "key":
   {
-    "i":
-    {
-      "item": "minecraft:iron_nugget"
-    },
     "g":
     {
-      "item": "minecraft:ghast_tear"
+      "item": "minecraft:gold_nugget"
     },
-    "b":
+    "d":
     {
-      "item": "minecraft:bamboo"
+      "item": "minecraft:sun_stick_dry"
     }
   },
   "result":
