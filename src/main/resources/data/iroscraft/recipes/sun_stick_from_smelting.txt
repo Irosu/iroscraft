@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "minecraft:rain_stick"
-  },
-  "result": "minecraft:sun_stick_from_smelting",
-  "experience": 0.2,
-  "cookingtime": 300
-}
