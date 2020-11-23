@@ -7,6 +7,7 @@ import com.irosu.iroscraft.blocks.SeranditeBlock;
 import com.irosu.iroscraft.blocks.SeranditeOre;
 import com.irosu.iroscraft.items.ItemBase;
 import com.irosu.iroscraft.items.RainStick;
+import com.irosu.iroscraft.items.SunStick;
 import com.irosu.iroscraft.tools.entherite.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
@@ -29,7 +30,6 @@ public class RegistryHandler {
     public static final RegistryObject<Item> FULGURITE = ITEMS.register("fulgurite", ItemBase::new);
     public static final RegistryObject<Item> ENTHERITE_INGOT = ITEMS.register("entherite_ingot", ItemBase::new);
     public static final RegistryObject<Item> SERANDITE = ITEMS.register("serandite", ItemBase::new);
-    //public static final RegistryObject<Item> RAIN_STICK = ITEMS.register("rain_stick", RainStick::new);
 
     //Blocks
     public static final RegistryObject<Block> SERANDITE_BLOCK = BLOCKS.register("serandite_block", SeranditeBlock::new);
@@ -61,4 +61,7 @@ public class RegistryHandler {
     public static final  RegistryObject<SwordItem> ENTHERITE_SWORD = ITEMS.register("entherite_sword",
             () -> new EntheriteSword(EntheriteItemTier.ENTHERITE, 0, -2.0f,
                     new Item.Properties().group(Iroscraft.TAB)));
+
+    public static final RegistryObject<Item> RAIN_STICK = ITEMS.register("rain_stick", RainStick::new);
+    public static final RegistryObject<Item> SUN_STICK = ITEMS.register("sun_stick", SunStick::new);
 }
