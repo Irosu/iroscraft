@@ -29,7 +29,6 @@ public abstract class WeatherToolItem extends ToolItem {
 
     public WeatherToolItem() {
         super(ATTACK_DMG, ATTACK_SPEED, ITEM_TIER, EFFECT_BLOCKS, PROPERTIES);
-
     }
 
     @Override
