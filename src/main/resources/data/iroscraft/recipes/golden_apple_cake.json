@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MLM",
+    "AHA",
+    "TTT"
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:milk_bucket"
+    },
+    "A": {
+      "item": "minecraft:honeycomb"
+    },
+    "T": {
+      "item": "minecraft:wheat"
+    },
+    "H": {
+      "item": "minecraft:egg"
+    },
+    "M": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "result": {
+    "item": "minecraft:apple_cake"
+  }
+}
