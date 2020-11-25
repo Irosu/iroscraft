@@ -20,7 +20,7 @@ public class RainStick extends WeatherToolItem {
         ItemStack itemstack = playerIn.getHeldItem(handIn);
 
         if(Math.random()*100 <= RAIN_PROB) {
-            worldIn. getWorldInfo().setRaining(true);
+            worldIn.getWorldInfo().setRaining(true);
         }
 
         itemstack.damageItem(DMG_AMOUNT, playerIn, (entity) -> entity.sendBreakAnimation(EquipmentSlotType.MAINHAND));
