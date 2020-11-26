@@ -8,10 +8,10 @@ import net.minecraftforge.common.ToolType;
 public class FulguriteOre extends Block {
 
     public FulguriteOre() {
-        super(Properties.create(Material.IRON)
-                .hardnessAndResistance(5.0f, 6.0f)
+        super(Properties.create(Material.SAND)
+                .hardnessAndResistance(0.5F)
                 .sound(SoundType.SAND)
-                .harvestLevel(4)
+                .harvestLevel(0)
                 .harvestTool(ToolType.SHOVEL)
         );
     }

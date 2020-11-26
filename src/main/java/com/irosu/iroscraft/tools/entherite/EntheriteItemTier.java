@@ -8,7 +8,7 @@ import java.util.function.Supplier;
 
 public enum EntheriteItemTier implements IItemTier {
 
-    ENTHERITE(3, 100, 10.0f, 0.0f, 12, () -> {
+    ENTHERITE(4, 2800, 9.5f, 4.5f, 17, () -> {
         return Ingredient.fromItems(
                 RegistryHandler.ENTHERITE_AXE.get(),
                 RegistryHandler.ENTHERITE_HOE.get(),
