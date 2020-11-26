@@ -37,12 +37,14 @@ public class RegistryHandler {
     public static final RegistryObject<Block> SERANDITE_ORE = BLOCKS.register("serandite_ore", SeranditeOre::new);
     public static final RegistryObject<Block> FULGURITE_ORE = BLOCKS.register("fulgurite_ore", FulguriteOre::new);
     public static final RegistryObject<Block> APPLE_CAKE = BLOCKS.register("apple_cake", CakeBase::new);
+    public static final RegistryObject<Block> GOLDEN_APPLE_CAKE = BLOCKS.register("golden_apple_cake", CakeBase::new);
 
     //Block Items
     public static final RegistryObject<Item> SERANDITE_BLOCK_BI = ITEMS.register("serandite_block", () -> new BlockItemBase(SERANDITE_BLOCK.get()));
     public static final RegistryObject<Item> SERANDITE_ORE_BI = ITEMS.register("serandite_ore", () -> new BlockItemBase(SERANDITE_ORE.get()));
     public static final RegistryObject<Item> FULGURITE_ORE_BI = ITEMS.register("fulgurite_ore", () -> new BlockItemBase(FULGURITE_ORE.get()));
     public static final RegistryObject<Item> APPLE_CAKE_BI = ITEMS.register("apple_cake", () -> new BlockItemBase(APPLE_CAKE.get()));
+    public static final RegistryObject<Item> GOLDEN_APPLE_CAKE_BI = ITEMS.register("golden_apple_cake", () -> new BlockItemBase(GOLDEN_APPLE_CAKE.get()));
 
     //Tools
     public static final  RegistryObject<AxeItem> ENTHERITE_AXE = ITEMS.register("entherite_axe",

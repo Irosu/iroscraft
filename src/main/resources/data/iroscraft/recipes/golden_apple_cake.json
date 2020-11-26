@@ -2,15 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "MLM",
-    "AHA",
+    "IHI",
     "TTT"
   ],
   "key": {
     "L": {
       "item": "minecraft:milk_bucket"
     },
-    "A": {
-      "item": "minecraft:honeycomb"
+    "I": {
+      "item": "minecraft:honey_bottle"
     },
     "T": {
       "item": "minecraft:wheat"
@@ -23,6 +23,6 @@
     }
   },
   "result": {
-    "item": "minecraft:apple_cake"
+    "item": "iroscraft:golden_apple_cake"
   }
 }

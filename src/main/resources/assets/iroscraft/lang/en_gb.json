@@ -9,7 +9,7 @@
   "item.iroscraft.entherite_sword": "Entherite sword",
 
   "item.iroscraft.fulgurite": "Fulgurite",
-  "item.iroscraft.fulgurite_ore": "Fulgurite ore",
+  "block.iroscraft.fulgurite_ore": "Fulgurite ore",
 
   "item.iroscraft.serandite": "Serandite",
   "block.iroscraft.serandite_ore": "Serandite ore",
@@ -19,6 +19,6 @@
   "item.iroscraft.rain_stick_dry": "Rain stick dry",
   "item.iroscraft.sun_stick": "Sun stick",
 
-  "item.iroscraft.apple_cake": "Apple cake"
-  "item.iroscraft.apple_cake": "Golden apple cake"
+  "block.iroscraft.apple_cake": "Apple cake",
+  "block.iroscraft.golden_apple_cake": "Golden apple cake"
 }
