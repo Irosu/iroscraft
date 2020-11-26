@@ -1,5 +1,6 @@
 package com.irosu.iroscraft.blocks;
 
+import com.google.common.collect.Lists;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CakeBlock;
@@ -14,12 +15,14 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.World;
 
+import java.util.List;
+
 /**
  * Clase con la funcionalidad compartida de todas las tartas
  */
 public class EnchantedCake extends CakeBlock {
 
-    private Effect effect;
+    private final List<Effect> effects = Lists.newArrayList();
     private int duration;
 
     public EnchantedCake() {
@@ -27,17 +30,18 @@ public class EnchantedCake extends CakeBlock {
     }
 
     public EnchantedCake(Effect effect, int duration) {
+        this(Lists.newArrayList(effect), duration);
+    }
+
+    public EnchantedCake(List<Effect> effects, int duration) {
         super(AbstractBlock.Properties.create(Material.CAKE).hardnessAndResistance(0.5F).sound(SoundType.CLOTH));
-        this.effect = effect;
+        this.effects.addAll(effects);
         this.duration = duration;
     }
 
     @Override
     public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
-        if(effect != null) {
-            player.addPotionEffect(new EffectInstance(effect, duration));
-        }
-
+        effects.forEach(effect -> player.addPotionEffect(new EffectInstance(effect, duration)));
         return super.onBlockActivated(state, worldIn, pos, player, handIn, hit);
     }
 }
