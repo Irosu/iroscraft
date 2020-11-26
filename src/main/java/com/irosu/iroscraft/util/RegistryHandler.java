@@ -8,6 +8,7 @@ import com.irosu.iroscraft.items.SunStick;
 import com.irosu.iroscraft.tools.entherite.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
+import net.minecraft.potion.Effects;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -36,8 +37,9 @@ public class RegistryHandler {
     public static final RegistryObject<Block> SERANDITE_BLOCK = BLOCKS.register("serandite_block", SeranditeBlock::new);
     public static final RegistryObject<Block> SERANDITE_ORE = BLOCKS.register("serandite_ore", SeranditeOre::new);
     public static final RegistryObject<Block> FULGURITE_ORE = BLOCKS.register("fulgurite_ore", FulguriteOre::new);
-    public static final RegistryObject<Block> APPLE_CAKE = BLOCKS.register("apple_cake", CakeBase::new);
-    public static final RegistryObject<Block> GOLDEN_APPLE_CAKE = BLOCKS.register("golden_apple_cake", CakeBase::new);
+    public static final RegistryObject<Block> APPLE_CAKE = BLOCKS.register("apple_cake", EnchantedCake::new);
+    public static final RegistryObject<Block> GOLDEN_APPLE_CAKE = BLOCKS.register("golden_apple_cake",
+            () -> new EnchantedCake(Effects.SPEED, 500));
 
     //Block Items
     public static final RegistryObject<Item> SERANDITE_BLOCK_BI = ITEMS.register("serandite_block", () -> new BlockItemBase(SERANDITE_BLOCK.get()));
