@@ -10,7 +10,7 @@ import net.minecraft.world.World;
 
 public class EntheriteAxe extends AxeItem {
 
-    public EntheriteAxe(IItemTier tier, int attackDamageIn, float attackSpeedIn, Properties builder) {
+    public EntheriteAxe(IItemTier tier, float attackDamageIn, float attackSpeedIn, Properties builder) {
         super(tier, attackDamageIn, attackSpeedIn, builder);
     }
 

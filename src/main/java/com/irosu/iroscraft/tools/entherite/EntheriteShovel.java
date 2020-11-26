@@ -10,7 +10,7 @@ import net.minecraft.world.World;
 
 public class EntheriteShovel extends ShovelItem {
 
-    public EntheriteShovel(IItemTier tier, int attackDamageIn, float attackSpeedIn, Properties builder) {
+    public EntheriteShovel(IItemTier tier, float attackDamageIn, float attackSpeedIn, Properties builder) {
         super(tier, attackDamageIn, attackSpeedIn, builder);
     }
 
