@@ -2,6 +2,7 @@ package com.irosu.iroscraft.tools.entherite;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
@@ -20,7 +21,7 @@ public class EntheriteHoe extends HoeItem {
      */
     @Override
     public boolean onBlockDestroyed(ItemStack stack, World worldIn, BlockState state, BlockPos pos, LivingEntity entityLiving) {
-        EntheriteUtils.saveItemOnEnderchest(worldIn, state, pos, entityLiving);
+        EntheriteUtils.saveItemOnEnderchest(worldIn, state, pos, (PlayerEntity)(entityLiving.getEntity()));
         return super.onBlockDestroyed(stack, worldIn, state, pos, entityLiving);
     }
 }

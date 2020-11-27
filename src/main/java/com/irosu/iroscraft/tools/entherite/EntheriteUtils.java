@@ -2,7 +2,6 @@ package com.irosu.iroscraft.tools.entherite;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EnderChestInventory;
 import net.minecraft.item.ItemStack;
@@ -21,9 +20,9 @@ public class EntheriteUtils {
      * Al picar un bloque se meterá automáticamente en el enderchest del jugador si no está lleno.
      * Si lo está simplemente aparecerá en el suelo como de costumbre.
      */
-    public static void saveItemOnEnderchest(World worldIn, BlockState state, BlockPos pos, LivingEntity entityLiving) {
+    public static void saveItemOnEnderchest(World worldIn, BlockState state, BlockPos pos, PlayerEntity player) {
 
-        EnderChestInventory enderChest = ((PlayerEntity)(entityLiving.getEntity())).getInventoryEnderChest();
+        EnderChestInventory enderChest = player.getInventoryEnderChest();
         List<ItemStack> items = Block.getDrops(state, (ServerWorld)worldIn, pos, null );
 
         if(!items.isEmpty()) {
