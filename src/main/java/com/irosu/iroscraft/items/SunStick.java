@@ -26,7 +26,7 @@ import net.minecraft.world.World;
 public class SunStick extends WeatherToolItem {
 
     public static final double CLEAR_PROB = 15.0;
-    public static final double LIGHTNING_PROB = 100.0;
+    public static final double LIGHTNING_PROB = 1.0;
 
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
 
