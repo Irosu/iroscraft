@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BLB",
+    "ABA",
+    "CCC"
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:milk_bucket"
+    },
+    "A": {
+      "item": "minecraft:sugar"
+    },
+    "C": {
+      "item": "minecraft:cookie"
+    },
+    "B": {
+      "item": "minecraft:sweet_berries"
+    }
+  },
+  "result": {
+    "item": "iroscraft:berry_cake"
+  }
+}
