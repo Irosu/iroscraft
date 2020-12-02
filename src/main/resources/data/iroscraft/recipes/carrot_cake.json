@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ZLZ",
+    "AHA",
+    "TTT"
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:milk_bucket"
+    },
+    "A": {
+      "item": "minecraft:sugar"
+    },
+    "T": {
+      "item": "minecraft:wheat"
+    },
+    "H": {
+      "item": "minecraft:egg"
+    },
+    "Z": {
+      "item": "minecraft:carrot"
+    }
+  },
+  "result": {
+    "item": "iroscraft:carrot_cake"
+  }
+}
