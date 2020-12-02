@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "cec",
+    "ene",
+    "cec"
+  ],
+  "key":
+  {
+    "c":
+    {
+      "item": "minecraft:crying_obsidian"
+    },
+    "e":
+    {
+      "item": "minecraft:ender_eye"
+    },
+    "n":
+    {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "iroscraft:entherite_ingot",
+    "count": 2
+  }
+}
