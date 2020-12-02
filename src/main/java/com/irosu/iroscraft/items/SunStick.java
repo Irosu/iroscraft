@@ -1,6 +1,5 @@
 package com.irosu.iroscraft.items;
 
-import com.irosu.iroscraft.Iroscraft;
 import com.irosu.iroscraft.entities.FulguriteLightningBolt;
 import com.irosu.iroscraft.tools.weather.WeatherToolItem;
 import net.minecraft.block.Block;
@@ -8,7 +7,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.effect.LightningBoltEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ItemStack;
@@ -48,7 +46,7 @@ public class SunStick extends WeatherToolItem {
 
     /**
      * Lanza un rayo en la ubicación a la que está apuntando el jugador.
-     * @param worldIn
+     * @param worldIn World
      */
     private void thunderStruck(World worldIn) {
 
