@@ -3,6 +3,10 @@ package com.irosu.iroscraft.util;
 import com.google.common.collect.Lists;
 import com.irosu.iroscraft.Iroscraft;
 import com.irosu.iroscraft.blocks.*;
+import com.irosu.iroscraft.blocks.cakes.AppleCake;
+import com.irosu.iroscraft.blocks.cakes.BerryCake;
+import com.irosu.iroscraft.blocks.cakes.BirthdayCake;
+import com.irosu.iroscraft.blocks.cakes.CarrotCake;
 import com.irosu.iroscraft.items.ItemBase;
 import com.irosu.iroscraft.items.RainStick;
 import com.irosu.iroscraft.items.SunStick;
@@ -38,9 +42,12 @@ public class RegistryHandler {
     public static final RegistryObject<Block> SERANDITE_BLOCK = BLOCKS.register("serandite_block", SeranditeBlock::new);
     public static final RegistryObject<Block> SERANDITE_ORE = BLOCKS.register("serandite_ore", SeranditeOre::new);
     public static final RegistryObject<Block> FULGURITE_ORE = BLOCKS.register("fulgurite_ore", FulguriteOre::new);
-    public static final RegistryObject<Block> APPLE_CAKE = BLOCKS.register("apple_cake", EnchantedCake::new);
+    public static final RegistryObject<Block> APPLE_CAKE = BLOCKS.register("apple_cake", AppleCake::new);
     public static final RegistryObject<Block> GOLDEN_APPLE_CAKE = BLOCKS.register("golden_apple_cake",
-            () -> new EnchantedCake(Lists.newArrayList(Effects.HEALTH_BOOST, Effects.ABSORPTION), 500));
+            () -> new AppleCake(Lists.newArrayList(Effects.HEALTH_BOOST, Effects.ABSORPTION), 500));
+    public static final RegistryObject<Block> CARROT_CAKE = BLOCKS.register("carrot_cake", CarrotCake::new);
+    public static final RegistryObject<Block> BERRY_CAKE = BLOCKS.register("berry_cake", BerryCake::new);
+    public static final RegistryObject<Block> BIRTHDAY_CAKE = BLOCKS.register("birthday_cake", BirthdayCake::new);
 
     //Block Items
     public static final RegistryObject<Item> SERANDITE_BLOCK_BI = ITEMS.register("serandite_block", () -> new BlockItemBase(SERANDITE_BLOCK.get()));
@@ -48,6 +55,9 @@ public class RegistryHandler {
     public static final RegistryObject<Item> FULGURITE_ORE_BI = ITEMS.register("fulgurite_ore", () -> new BlockItemBase(FULGURITE_ORE.get()));
     public static final RegistryObject<Item> APPLE_CAKE_BI = ITEMS.register("apple_cake", () -> new BlockItemBase(APPLE_CAKE.get()));
     public static final RegistryObject<Item> GOLDEN_APPLE_CAKE_BI = ITEMS.register("golden_apple_cake", () -> new BlockItemBase(GOLDEN_APPLE_CAKE.get()));
+    public static final RegistryObject<Item> CARROT_CAKE_BI = ITEMS.register("carrot_cake", () -> new BlockItemBase(CARROT_CAKE.get()));
+    public static final RegistryObject<Item> BERRY_CAKE_BI = ITEMS.register("berry_cake", () -> new BlockItemBase(BERRY_CAKE.get()));
+    public static final RegistryObject<Item> BIRTHDAY_CAKE_BI = ITEMS.register("birthday_cake", () -> new BlockItemBase(BIRTHDAY_CAKE.get()));
 
     //Tools
     public static final  RegistryObject<AxeItem> ENTHERITE_AXE = ITEMS.register("entherite_axe",
