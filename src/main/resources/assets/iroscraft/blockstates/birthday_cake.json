@@ -20,6 +20,9 @@
     },
     "bites=6": {
       "model": "iroscraft:block/birthday_cake_slice6"
+    },
+    "bites=7": {
+      "model": "iroscraft:block/birthday_cake_slice7"
     }
   }
 }

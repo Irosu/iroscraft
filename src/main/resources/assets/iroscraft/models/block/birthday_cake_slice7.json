@@ -1,0 +1,72 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "iroscraft:blocks/birthday_cake_top",
+		"3": "iroscraft:blocks/birthday_cake_bottom",
+		"4": "iroscraft:blocks/birthday_cake_side",
+		"5": "iroscraft:blocks/birthday_cake_inner",
+		"particle": "iroscraft:blocks/birthday_cake_top"
+	},
+	"elements": [
+		{
+			"from": [8, 0, 8],
+			"to": [16, 10, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 8, 16]},
+			"faces": {
+				"north": {"uv": [0, 6, 8, 16], "texture": "#5"},
+				"east": {"uv": [0, 6, 8, 16], "texture": "#4"},
+				"south": {"uv": [8, 6, 16, 16], "texture": "#5"},
+				"west": {"uv": [8, 6, 12, 16], "texture": "#5"},
+				"up": {"uv": [8, 8, 16, 12], "texture": "#0"},
+				"down": {"uv": [8, 4, 16, 8], "texture": "#3"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "velas",
+			"origin": [8, 8, 8],
+			"children": [
+				{
+					"name": "Vela rosa",
+					"origin": [8, 8, 8],
+					"children": []
+				},
+				{
+					"name": "Vela rosa",
+					"origin": [8, 8, 8],
+					"children": []
+				},
+				{
+					"name": "Vela rosa",
+					"origin": [8, 8, 8],
+					"children": []
+				},
+				{
+					"name": "Vela rosa",
+					"origin": [8, 8, 8],
+					"children": []
+				},
+				{
+					"name": "Vela rosa",
+					"origin": [8, 8, 8],
+					"children": []
+				},
+				{
+					"name": "Vela rosa",
+					"origin": [8, 8, 8],
+					"children": []
+				},
+				{
+					"name": "Vela rosa",
+					"origin": [8, 8, 8],
+					"children": []
+				},
+				{
+					"name": "Vela rosa",
+					"origin": [8, 8, 8],
+					"children": []
+				}
+			]
+		}, 0]
+}
