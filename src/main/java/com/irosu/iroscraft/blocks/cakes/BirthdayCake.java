@@ -22,16 +22,18 @@ import java.util.List;
 
 public class BirthdayCake extends Block implements ICustomCake {
 
-    protected static final int SLICES = 6;
-    protected static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 6);
+    protected static final int SLICES = 8;
+    protected static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 8);
     protected static final VoxelShape[] SHAPES = new VoxelShape[] {
-            Block.makeCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 8.0D, 15.0D),
-            Block.makeCuboidShape(3.0D, 0.0D, 1.0D, 15.0D, 8.0D, 15.0D),
-            Block.makeCuboidShape(5.0D, 0.0D, 1.0D, 15.0D, 8.0D, 15.0D),
-            Block.makeCuboidShape(7.0D, 0.0D, 1.0D, 15.0D, 8.0D, 15.0D),
-            Block.makeCuboidShape(9.0D, 0.0D, 1.0D, 15.0D, 8.0D, 15.0D),
-            Block.makeCuboidShape(11.0D, 0.0D, 1.0D, 15.0D, 8.0D, 15.0D),
-            Block.makeCuboidShape(13.0D, 0.0D, 1.0D, 15.0D, 8.0D, 15.0D)
+            Block.makeCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
+            Block.makeCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
+            Block.makeCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
+            Block.makeCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
+            Block.makeCuboidShape(8.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
+            Block.makeCuboidShape(8.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
+            Block.makeCuboidShape(8.0D, 0.0D, 8.0D, 16.0D, 10.0D, 16.0D),
+            Block.makeCuboidShape(8.0D, 0.0D, 8.0D, 16.0D, 10.0D, 16.0D),
+            Block.makeCuboidShape(8.0D, 0.0D, 8.0D, 12.0D, 10.0D, 16.0D)
     };
 
     private final static Properties properties = Properties.create(Material.CAKE).hardnessAndResistance(0.5F).sound(SoundType.CLOTH);
