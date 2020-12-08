@@ -60,23 +60,23 @@ public class RegistryHandler {
     public static final RegistryObject<Item> BIRTHDAY_CAKE_BI = ITEMS.register("birthday_cake", () -> new BlockItemBase(BIRTHDAY_CAKE.get()));
 
     //Tools
-    public static final  RegistryObject<AxeItem> ENTHERITE_AXE = ITEMS.register("entherite_axe",
-            () -> new EntheriteAxe(EntheriteItemTier.ENTHERITE, 5.5F, -3.0F,
+    public static final RegistryObject<AxeItem> ENTHERITE_AXE = ITEMS.register("entherite_axe",
+            () -> new EntheriteAxe(EntheriteItemTier.ENTHERITE, 5.5F,-3.0F,
                     new Item.Properties().group(Iroscraft.TAB)));
 
-    public static final  RegistryObject<HoeItem> ENTHERITE_HOE = ITEMS.register("entherite_hoe",
-            () -> new EntheriteHoe(EntheriteItemTier.ENTHERITE, -4, 0.0F,
+    public static final RegistryObject<HoeItem> ENTHERITE_HOE = ITEMS.register("entherite_hoe",
+            () -> new EntheriteHoe(EntheriteItemTier.ENTHERITE, -4,0.0F,
                     new Item.Properties().group(Iroscraft.TAB)));
 
-    public static final  RegistryObject<EntheritePickaxe> ENTHERITE_PICKAXE = ITEMS.register("entherite_pickaxe",
-            () -> new EntheritePickaxe(EntheriteItemTier.ENTHERITE, 1, -2.7F,
+    public static final RegistryObject<EntheritePickaxe> ENTHERITE_PICKAXE = ITEMS.register("entherite_pickaxe",
+            () -> new EntheritePickaxe(EntheriteItemTier.ENTHERITE, 1,-2.7F,
                     new Item.Properties().group(Iroscraft.TAB)));
 
-    public static final  RegistryObject<ShovelItem> ENTHERITE_SHOVEL = ITEMS.register("entherite_shovel",
-            () -> new EntheriteShovel(EntheriteItemTier.ENTHERITE, 1.8F, -3.0F,
+    public static final RegistryObject<ShovelItem> ENTHERITE_SHOVEL = ITEMS.register("entherite_shovel",
+            () -> new EntheriteShovel(EntheriteItemTier.ENTHERITE, 1.8F,-3.0F,
                     new Item.Properties().group(Iroscraft.TAB)));
 
-    public static final  RegistryObject<SwordItem> ENTHERITE_SWORD = ITEMS.register("entherite_sword",
-            () -> new EntheriteSword(EntheriteItemTier.ENTHERITE, 4, -2.8f,
+    public static final RegistryObject<SwordItem> ENTHERITE_SWORD = ITEMS.register("entherite_sword",
+            () -> new EntheriteSword(EntheriteItemTier.ENTHERITE, 4,-2.8f,
                     new Item.Properties().group(Iroscraft.TAB)));
 }
