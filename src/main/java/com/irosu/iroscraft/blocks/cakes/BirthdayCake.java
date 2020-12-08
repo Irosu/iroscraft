@@ -28,7 +28,7 @@ public class BirthdayCake extends Block implements ICustomCake {
             Block.makeCuboidShape(0.0001D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
             Block.makeCuboidShape(0.0001D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
             Block.makeCuboidShape(0.0001D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
-            Block.makeCuboidShape(0.0001D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
+            Block.makeCuboidShape(4.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
             Block.makeCuboidShape(8.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
             Block.makeCuboidShape(8.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
             Block.makeCuboidShape(8.0D, 0.0D, 8.0D, 16.0D, 10.0D, 16.0D),
