@@ -1,18 +1,22 @@
 package com.irosu.iroscraft.tools.entherite;
 
+import com.irosu.iroscraft.Iroscraft;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.AxeItem;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class EntheriteAxe extends AxeItem {
 
-    public EntheriteAxe(IItemTier tier, float attackDamageIn, float attackSpeedIn, Properties builder) {
-        super(tier, attackDamageIn, attackSpeedIn, builder);
+    private static final EntheriteItemTier tier = EntheriteItemTier.ENTHERITE;
+    private static final float attackDamage = 5.5F;
+    private static final float attackSpeed = -3.0F;
+    private static final Properties properties = new Properties().group(Iroscraft.TAB);
+
+    public EntheriteAxe() {
+        super(tier, attackDamage, attackSpeed, properties);
     }
 
     /**
