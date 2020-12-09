@@ -45,6 +45,7 @@ public class RegistryHandler {
     public static final RegistryObject<Block> GOLDEN_CARROT_CAKE = BLOCKS.register("golden_carrot_cake", GoldenCarrotCake::new);
     public static final RegistryObject<Block> SERANDITE_BLOCK = BLOCKS.register("serandite_block", SeranditeBlock::new);
     public static final RegistryObject<Block> SERANDITE_ORE = BLOCKS.register("serandite_ore", SeranditeOre::new);
+    public static final RegistryObject<Block> SPANISH_OMELLETE = BLOCKS.register("spanish_omellete", SpanishOmellete::new);
 
     //Block Items
     public static final RegistryObject<Item> APPLE_CAKE_BI = ITEMS.register("apple_cake", () -> new BlockItemBase(APPLE_CAKE.get()));
@@ -56,6 +57,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> GOLDEN_CARROT_CAKE_BI = ITEMS.register("golden_carrot_cake", () -> new BlockItemBase(GOLDEN_CARROT_CAKE.get()));
     public static final RegistryObject<Item> SERANDITE_BLOCK_BI = ITEMS.register("serandite_block", () -> new BlockItemBase(SERANDITE_BLOCK.get()));
     public static final RegistryObject<Item> SERANDITE_ORE_BI = ITEMS.register("serandite_ore", () -> new BlockItemBase(SERANDITE_ORE.get()));
+    public static final RegistryObject<Item> SPANISH_OMELLETE_BI = ITEMS.register("spanish_omellete", () -> new BlockItemBase(SPANISH_OMELLETE.get()));
 
     //Tools
     public static final RegistryObject<AxeItem> ENTHERITE_AXE = ITEMS.register("entherite_axe", EntheriteAxe::new);

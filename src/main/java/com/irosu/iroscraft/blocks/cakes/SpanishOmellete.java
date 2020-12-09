@@ -21,26 +21,26 @@ import net.minecraft.world.World;
 
 import java.util.Map;
 
-public class CarrotCake extends Block implements ICustomCake {
+public class SpanishOmellete extends Block implements ICustomCake {
 
-    private static final int SLICES = 4;
+    private static final int SLICES = 3;
     private static final IntegerProperty BITES = IntegerProperty.create("bites", 0, SLICES);
     private static final VoxelShape[] SHAPES = new VoxelShape[] {
-            Block.makeCuboidShape(3.0D, 0.0D, 3.0D, 13.0D, 5.0D, 13.0D),
-            Block.makeCuboidShape(5.0D, 0.0D, 3.0D, 13.0D, 5.0D, 13.0D),
-            Block.makeCuboidShape(7.0D, 0.0D, 3.0D, 13.0D, 5.0D, 13.0D),
-            Block.makeCuboidShape(9.0D, 0.0D, 3.0D, 13.0D, 5.0D, 13.0D),
-            Block.makeCuboidShape(11.0D, 0.0D, 3.0D, 13.0D, 5.0D, 13.0D)
+            Block.makeCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 2.0D, 15.0D),
+            Block.makeCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 2.0D, 15.0D),
+            Block.makeCuboidShape(7.0D, 0.0D, 1.0D, 15.0D, 2.0D, 15.0D),
+            Block.makeCuboidShape(7.0D, 0.0D, 7.0D, 15.0D, 2.0D, 15.0D)
     };
 
     private static final Properties properties = Properties.create(Material.CAKE).hardnessAndResistance(0.5F).sound(SoundType.CLOTH);
     private static final Map<Effect, Integer> effects = Maps.newHashMap();
 
     static {
-        effects.put(Effects.HEALTH_BOOST, 500);
+        effects.put(Effects.HERO_OF_THE_VILLAGE, 500);
+        effects.put(Effects.LUCK, 500);
     }
 
-    public CarrotCake() {
+    public SpanishOmellete() {
         super(properties);
         StateContainer.Builder<Block, BlockState> builder = new StateContainer.Builder<>(this);
         super.fillStateContainer(builder);

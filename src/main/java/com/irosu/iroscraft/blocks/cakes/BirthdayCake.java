@@ -24,7 +24,7 @@ import java.util.Map;
 public class BirthdayCake extends Block implements ICustomCake {
 
     private static final int SLICES = 7;
-    private static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 7);
+    private static final IntegerProperty BITES = IntegerProperty.create("bites", 0, SLICES);
     private static final VoxelShape[] SHAPES = new VoxelShape[] {
             Block.makeCuboidShape(0.0001D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
             Block.makeCuboidShape(0.0001D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),

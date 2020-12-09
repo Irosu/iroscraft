@@ -24,7 +24,7 @@ import java.util.Map;
 public class BerryCake extends Block implements ICustomCake {
 
     private static final int SLICES = 3;
-    private static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 3);
+    private static final IntegerProperty BITES = IntegerProperty.create("bites", 0, SLICES);
     private static final VoxelShape[] SHAPES = new VoxelShape[] {
             Block.makeCuboidShape(4.0D, 0.0D, 4.0D, 12.0D, 2.0D, 12.0D),
             Block.makeCuboidShape(6.0D, 0.0D, 4.0D, 12.0D, 2.0D, 12.0D),

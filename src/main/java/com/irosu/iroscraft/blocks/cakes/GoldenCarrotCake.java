@@ -24,7 +24,7 @@ import java.util.Map;
 public class GoldenCarrotCake extends Block implements ICustomCake {
 
     private static final int SLICES = 4;
-    private static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 4);
+    private static final IntegerProperty BITES = IntegerProperty.create("bites", 0, SLICES);
     private static final VoxelShape[] SHAPES = new VoxelShape[] {
             Block.makeCuboidShape(3.0D, 0.0D, 3.0D, 13.0D, 5.0D, 13.0D),
             Block.makeCuboidShape(5.0D, 0.0D, 3.0D, 13.0D, 5.0D, 13.0D),
