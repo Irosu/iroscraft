@@ -21,30 +21,34 @@ import net.minecraft.world.World;
 
 import java.util.Map;
 
-public class CarrotCake extends Block implements ICustomCake {
+public class GoldenAppleCake extends Block implements ICustomCake {
 
-    protected static final int SLICES = 4;
-    protected static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 4);
+    protected static final int SLICES = 6;
+    protected static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 6);
     protected static final VoxelShape[] SHAPES = new VoxelShape[] {
-            Block.makeCuboidShape(3.0D, 0.0D, 3.0D, 13.0D, 5.0D, 13.0D),
-            Block.makeCuboidShape(5.0D, 0.0D, 3.0D, 13.0D, 5.0D, 13.0D),
-            Block.makeCuboidShape(7.0D, 0.0D, 3.0D, 13.0D, 5.0D, 13.0D),
-            Block.makeCuboidShape(9.0D, 0.0D, 3.0D, 13.0D, 5.0D, 13.0D),
-            Block.makeCuboidShape(11.0D, 0.0D, 3.0D, 13.0D, 5.0D, 13.0D)
+            Block.makeCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 3.0D, 15.0D),
+            Block.makeCuboidShape(3.0D, 0.0D, 1.0D, 15.0D, 3.0D, 15.0D),
+            Block.makeCuboidShape(5.0D, 0.0D, 1.0D, 15.0D, 3.0D, 15.0D),
+            Block.makeCuboidShape(7.0D, 0.0D, 1.0D, 15.0D, 3.0D, 15.0D),
+            Block.makeCuboidShape(9.0D, 0.0D, 1.0D, 15.0D, 3.0D, 15.0D),
+            Block.makeCuboidShape(11.0D, 0.0D, 1.0D, 15.0D, 3.0D, 15.0D),
+            Block.makeCuboidShape(13.0D, 0.0D, 1.0D, 15.0D, 3.0D, 15.0D)
     };
 
     private final static Properties properties = Properties.create(Material.CAKE).hardnessAndResistance(0.5F).sound(SoundType.CLOTH);
     protected static final Map<Effect, Integer> effects = Maps.newHashMap();
 
     static {
-        effects.put(Effects.HEALTH_BOOST, 500);
+        effects.put(Effects.REGENERATION, 500);
+        effects.put(Effects.ABSORPTION, 50);
     }
 
-    public CarrotCake() {
+    public GoldenAppleCake() {
         super(properties);
         StateContainer.Builder<Block, BlockState> builder = new StateContainer.Builder<>(this);
         super.fillStateContainer(builder);
         super.setDefaultState(this.stateContainer.getBaseState().with(BITES, 0));
+
     }
 
     public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {

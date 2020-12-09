@@ -10,19 +10,17 @@ import net.minecraft.stats.Stats;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
 
-import java.util.List;
+import java.util.Map;
 
 public class CakeUtils {
 
     public static ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player,
-                                             Hand handIn, BlockRayTraceResult hit, List<Effect> effects,
-                                             int duration, IntegerProperty bites, int slices) {
+                                         Hand handIn, Map<Effect, Integer> effects, IntegerProperty bites, int slices) {
 
-        effects.forEach(effect -> player.addPotionEffect(new EffectInstance(effect, duration)));
+        effects.forEach((effect, duration) -> player.addPotionEffect(new EffectInstance(effect, duration)));
 
         if (worldIn.isRemote) {
             ItemStack itemstack = player.getHeldItem(handIn);

@@ -1,12 +1,13 @@
 package com.irosu.iroscraft.blocks.cakes;
 
-import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.Effect;
+import net.minecraft.potion.Effects;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.util.ActionResultType;
@@ -18,7 +19,7 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 
-import java.util.List;
+import java.util.Map;
 
 public class AppleCake extends Block implements ICustomCake {
 
@@ -35,8 +36,11 @@ public class AppleCake extends Block implements ICustomCake {
     };
 
     private final static Properties properties = Properties.create(Material.CAKE).hardnessAndResistance(0.5F).sound(SoundType.CLOTH);
-    protected final List<Effect> effects = Lists.newArrayList();
-    protected int duration;
+    protected static final Map<Effect, Integer> effects = Maps.newHashMap();
+
+    static {
+        effects.put(Effects.SATURATION, 5);
+    }
 
     public AppleCake() {
         super(properties);
@@ -45,18 +49,8 @@ public class AppleCake extends Block implements ICustomCake {
         super.setDefaultState(this.stateContainer.getBaseState().with(BITES, 0));
     }
 
-    public AppleCake(Effect effect, int duration) {
-        this(Lists.newArrayList(effect), duration);
-    }
-
-    public AppleCake(List<Effect> effects, int duration) {
-        this();
-        this.effects.addAll(effects);
-        this.duration = duration;
-    }
-
     public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
-        return CakeUtils.onBlockActivated(state, worldIn, pos, player, handIn, hit, effects, duration, BITES, SLICES);
+        return CakeUtils.onBlockActivated(state, worldIn, pos, player, handIn, effects, BITES, SLICES);
     }
 
     public void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {

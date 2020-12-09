@@ -1,19 +1,17 @@
 package com.irosu.iroscraft.util;
 
-import com.google.common.collect.Lists;
 import com.irosu.iroscraft.Iroscraft;
-import com.irosu.iroscraft.blocks.*;
-import com.irosu.iroscraft.blocks.cakes.AppleCake;
-import com.irosu.iroscraft.blocks.cakes.BerryCake;
-import com.irosu.iroscraft.blocks.cakes.BirthdayCake;
-import com.irosu.iroscraft.blocks.cakes.CarrotCake;
+import com.irosu.iroscraft.blocks.BlockItemBase;
+import com.irosu.iroscraft.blocks.FulguriteOre;
+import com.irosu.iroscraft.blocks.SeranditeBlock;
+import com.irosu.iroscraft.blocks.SeranditeOre;
+import com.irosu.iroscraft.blocks.cakes.*;
 import com.irosu.iroscraft.items.ItemBase;
 import com.irosu.iroscraft.items.RainStick;
 import com.irosu.iroscraft.items.SunStick;
 import com.irosu.iroscraft.tools.entherite.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
-import net.minecraft.potion.Effects;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -42,16 +40,12 @@ public class RegistryHandler {
     public static final RegistryObject<Block> SERANDITE_BLOCK = BLOCKS.register("serandite_block", SeranditeBlock::new);
     public static final RegistryObject<Block> SERANDITE_ORE = BLOCKS.register("serandite_ore", SeranditeOre::new);
     public static final RegistryObject<Block> FULGURITE_ORE = BLOCKS.register("fulgurite_ore", FulguriteOre::new);
-    public static final RegistryObject<Block> APPLE_CAKE = BLOCKS.register("apple_cake",
-            () -> new AppleCake(Effects.SATURATION, 50));
-    public static final RegistryObject<Block> GOLDEN_APPLE_CAKE = BLOCKS.register("golden_apple_cake",
-            () -> new AppleCake(Lists.newArrayList(Effects.REGENERATION, Effects.ABSORPTION), 500));
-    public static final RegistryObject<Block> CARROT_CAKE = BLOCKS.register("carrot_cake",
-            () -> new CarrotCake(Effects.HEALTH_BOOST, 500));
-    public static final RegistryObject<Block> BERRY_CAKE = BLOCKS.register("berry_cake",
-            () -> new BerryCake(Lists.newArrayList(Effects.STRENGTH, Effects.HASTE), 500));
-    public static final RegistryObject<Block> BIRTHDAY_CAKE = BLOCKS.register("birthday_cake",
-            () -> new BirthdayCake(Lists.newArrayList(Effects.HERO_OF_THE_VILLAGE, Effects.GLOWING), 500));
+
+    public static final RegistryObject<Block> APPLE_CAKE = BLOCKS.register("apple_cake", AppleCake::new);
+    public static final RegistryObject<Block> GOLDEN_APPLE_CAKE = BLOCKS.register("golden_apple_cake", GoldenAppleCake::new);
+    public static final RegistryObject<Block> CARROT_CAKE = BLOCKS.register("carrot_cake", CarrotCake::new);
+    public static final RegistryObject<Block> BERRY_CAKE = BLOCKS.register("berry_cake", BerryCake::new);
+    public static final RegistryObject<Block> BIRTHDAY_CAKE = BLOCKS.register("birthday_cake", BirthdayCake::new);
 
     //Block Items
     public static final RegistryObject<Item> SERANDITE_BLOCK_BI = ITEMS.register("serandite_block", () -> new BlockItemBase(SERANDITE_BLOCK.get()));
