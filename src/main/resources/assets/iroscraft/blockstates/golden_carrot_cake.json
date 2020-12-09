@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "iroscraft:block/golden_carrot_cake"
+    },
+    "bites=1": {
+      "model": "iroscraft:block/golden_carrot_cake_slice1"
+    },
+    "bites=2": {
+      "model": "iroscraft:block/golden_carrot_cake_slice2"
+    },
+    "bites=3": {
+      "model": "iroscraft:block/golden_carrot_cake_slice3"
+    },
+    "bites=4": {
+      "model": "iroscraft:block/golden_carrot_cake_slice4"
+    }
+  }
+}

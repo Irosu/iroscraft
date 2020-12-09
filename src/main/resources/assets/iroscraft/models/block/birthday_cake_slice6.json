@@ -1,5 +1,4 @@
 {
-	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "iroscraft:blocks/birthday_cake_top",
 		"1": "iroscraft:blocks/birthday_cake_torch",
@@ -9,6 +8,19 @@
 		"particle": "iroscraft:blocks/birthday_cake_top"
 	},
 	"elements": [
+		{
+			"from": [8, 0, 8],
+			"to": [16, 10, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 8, 9]},
+			"faces": {
+				"north": {"uv": [0, 6, 8, 16], "texture": "#5"},
+				"east": {"uv": [0, 6, 8, 16], "texture": "#4"},
+				"south": {"uv": [8, 6, 16, 16], "texture": "#4"},
+				"west": {"uv": [8, 6, 16, 16], "texture": "#5"},
+				"up": {"uv": [8, 8, 16, 16], "texture": "#0"},
+				"down": {"uv": [8, 0, 16, 8], "texture": "#3"}
+			}
+		},
 		{
 			"from": [12, 12, 12],
 			"to": [13, 14, 13],
@@ -54,22 +66,9 @@
 				"south": {"uv": [6, 0, 9, 6], "texture": "#1"},
 				"west": {"uv": [6, 0, 9, 6], "texture": "#1"}
 			}
-		},
-		{
-			"from": [8, 0, 8],
-			"to": [16, 10, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [16, 8, 16]},
-			"faces": {
-				"north": {"uv": [0, 6, 8, 16], "texture": "#5"},
-				"east": {"uv": [0, 6, 8, 16], "texture": "#4"},
-				"south": {"uv": [8, 6, 16, 16], "texture": "#4"},
-				"west": {"uv": [8, 6, 16, 16], "texture": "#5"},
-				"up": {"uv": [8, 8, 16, 16], "texture": "#0"},
-				"down": {"uv": [8, 0, 16, 8], "texture": "#3"}
-			}
 		}
 	],
-	"groups": [
+	"groups": [0,
 		{
 			"name": "velas",
 			"origin": [8, 8, 8],
@@ -77,43 +76,19 @@
 				{
 					"name": "Vela rosa",
 					"origin": [8, 8, 8],
-					"children": []
+					"children": [1]
 				},
 				{
 					"name": "Vela rosa",
 					"origin": [8, 8, 8],
-					"children": []
+					"children": [2, 3]
 				},
 				{
 					"name": "Vela rosa",
 					"origin": [8, 8, 8],
-					"children": []
-				},
-				{
-					"name": "Vela rosa",
-					"origin": [8, 8, 8],
-					"children": [0]
-				},
-				{
-					"name": "Vela rosa",
-					"origin": [8, 8, 8],
-					"children": [1, 2]
-				},
-				{
-					"name": "Vela rosa",
-					"origin": [8, 8, 8],
-					"children": [3]
-				},
-				{
-					"name": "Vela rosa",
-					"origin": [8, 8, 8],
-					"children": []
-				},
-				{
-					"name": "Vela rosa",
-					"origin": [8, 8, 8],
-					"children": []
+					"children": [4]
 				}
 			]
-		}, 4]
+		}
+	]
 }

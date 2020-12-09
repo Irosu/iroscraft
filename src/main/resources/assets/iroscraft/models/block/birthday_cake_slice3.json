@@ -1,5 +1,4 @@
 {
-	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "iroscraft:blocks/birthday_cake_top",
 		"1": "iroscraft:blocks/birthday_cake_torch",
@@ -10,26 +9,16 @@
 	},
 	"elements": [
 		{
-			"from": [3, 10, 3],
-			"to": [4, 12, 4],
-			"rotation": {"angle": 0, "axis": "y", "origin": [11, 19, 11]},
+			"from": [8, 0, 0],
+			"to": [16, 10, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 8, 9]},
 			"faces": {
-				"north": {"uv": [0, 6, 3, 12], "texture": "#1"},
-				"east": {"uv": [0, 6, 3, 12], "texture": "#1"},
-				"south": {"uv": [0, 6, 3, 12], "texture": "#1"},
-				"west": {"uv": [0, 6, 3, 12], "texture": "#1"}
-			}
-		},
-		{
-			"from": [3, 12, 3],
-			"to": [4, 14, 4],
-			"rotation": {"angle": 0, "axis": "y", "origin": [11, 20, 11]},
-			"faces": {
-				"north": {"uv": [0, 6, 3, 12], "texture": "#1"},
-				"east": {"uv": [0, 6, 3, 12], "texture": "#1"},
-				"south": {"uv": [0, 6, 3, 12], "texture": "#1"},
-				"west": {"uv": [0, 6, 3, 12], "texture": "#1"},
-				"up": {"uv": [13, 3, 16, 6], "texture": "#1"}
+				"north": {"uv": [0, 6, 8, 16], "texture": "#4"},
+				"east": {"uv": [0, 6, 16, 16], "texture": "#4"},
+				"south": {"uv": [8, 6, 16, 16], "texture": "#4"},
+				"west": {"uv": [0, 6, 16, 16], "texture": "#5"},
+				"up": {"uv": [8, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [8, 0, 16, 16], "texture": "#3"}
 			}
 		},
 		{
@@ -148,42 +137,18 @@
 			}
 		},
 		{
-			"from": [8, 0, 0],
-			"to": [16, 10, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [9, 8, 9]},
+			"from": [4, 0, 0],
+			"to": [8, 10, 8],
 			"faces": {
-				"north": {"uv": [0, 6, 8, 16], "texture": "#4"},
-				"east": {"uv": [8, 6, 16, 16], "texture": "#4"},
+				"north": {"uv": [8, 6, 12, 16], "texture": "#4"},
+				"south": {"uv": [4, 6, 8, 16], "texture": "#5"},
 				"west": {"uv": [0, 6, 8, 16], "texture": "#5"},
-				"up": {"uv": [8, 0, 16, 8], "texture": "#0"},
-				"down": {"uv": [8, 8, 16, 16], "texture": "#3"}
-			}
-		},
-		{
-			"from": [8, 0, 8],
-			"to": [16, 10, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [16, 8, 16]},
-			"faces": {
-				"east": {"uv": [0, 6, 8, 16], "texture": "#4"},
-				"south": {"uv": [8, 6, 16, 16], "texture": "#4"},
-				"west": {"uv": [8, 6, 16, 16], "texture": "#5"},
-				"up": {"uv": [8, 8, 16, 16], "texture": "#0"},
-				"down": {"uv": [8, 0, 16, 8], "texture": "#3"}
-			}
-		},
-		{
-			"from": [0, 0, 0],
-			"to": [8, 10, 4],
-			"faces": {
-				"north": {"uv": [8, 6, 16, 16], "texture": "#4"},
-				"south": {"uv": [0, 6, 8, 16], "texture": "#5"},
-				"west": {"uv": [0, 6, 8, 16], "texture": "#4"},
-				"up": {"uv": [0, 0, 8, 3], "texture": "#0"},
-				"down": {"uv": [0, 12, 8, 16], "texture": "#3"}
+				"up": {"uv": [4, 0, 8, 8], "texture": "#0"},
+				"down": {"uv": [4, 8, 8, 16], "texture": "#3"}
 			}
 		}
 	],
-	"groups": [
+	"groups": [0,
 		{
 			"name": "velas",
 			"origin": [8, 8, 8],
@@ -191,43 +156,33 @@
 				{
 					"name": "Vela rosa",
 					"origin": [8, 8, 8],
-					"children": [0, 1]
+					"children": [1, 2]
 				},
 				{
 					"name": "Vela rosa",
 					"origin": [8, 8, 8],
-					"children": [2, 3]
+					"children": [3, 4]
 				},
 				{
 					"name": "Vela rosa",
 					"origin": [8, 8, 8],
-					"children": [4, 5]
+					"children": [5, 6]
 				},
 				{
 					"name": "Vela rosa",
 					"origin": [8, 8, 8],
-					"children": [6, 7]
+					"children": [7, 8]
 				},
 				{
 					"name": "Vela rosa",
 					"origin": [8, 8, 8],
-					"children": [8, 9]
+					"children": [9]
 				},
 				{
 					"name": "Vela rosa",
 					"origin": [8, 8, 8],
 					"children": [10]
-				},
-				{
-					"name": "Vela rosa",
-					"origin": [8, 8, 8],
-					"children": [11]
-				},
-				{
-					"name": "Vela rosa",
-					"origin": [8, 8, 8],
-					"children": []
 				}
 			]
-		}, 12, 13, 14]
+		}, 11]
 }
