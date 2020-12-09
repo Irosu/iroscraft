@@ -44,6 +44,7 @@ public class RegistryHandler {
     public static final RegistryObject<Block> APPLE_CAKE = BLOCKS.register("apple_cake", AppleCake::new);
     public static final RegistryObject<Block> GOLDEN_APPLE_CAKE = BLOCKS.register("golden_apple_cake", GoldenAppleCake::new);
     public static final RegistryObject<Block> CARROT_CAKE = BLOCKS.register("carrot_cake", CarrotCake::new);
+    public static final RegistryObject<Block> GOLDEN_CARROT_CAKE = BLOCKS.register("golden_carrot_cake", GoldenCarrotCake::new);
     public static final RegistryObject<Block> BERRY_CAKE = BLOCKS.register("berry_cake", BerryCake::new);
     public static final RegistryObject<Block> BIRTHDAY_CAKE = BLOCKS.register("birthday_cake", BirthdayCake::new);
 
@@ -54,6 +55,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> APPLE_CAKE_BI = ITEMS.register("apple_cake", () -> new BlockItemBase(APPLE_CAKE.get()));
     public static final RegistryObject<Item> GOLDEN_APPLE_CAKE_BI = ITEMS.register("golden_apple_cake", () -> new BlockItemBase(GOLDEN_APPLE_CAKE.get()));
     public static final RegistryObject<Item> CARROT_CAKE_BI = ITEMS.register("carrot_cake", () -> new BlockItemBase(CARROT_CAKE.get()));
+    public static final RegistryObject<Item> GOLDEN_CARROT_CAKE_BI = ITEMS.register("golden_carrot_cake", () -> new BlockItemBase(GOLDEN_CARROT_CAKE.get()));
     public static final RegistryObject<Item> BERRY_CAKE_BI = ITEMS.register("berry_cake", () -> new BlockItemBase(BERRY_CAKE.get()));
     public static final RegistryObject<Item> BIRTHDAY_CAKE_BI = ITEMS.register("birthday_cake", () -> new BlockItemBase(BIRTHDAY_CAKE.get()));
 
