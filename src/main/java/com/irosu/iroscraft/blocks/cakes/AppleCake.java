@@ -23,9 +23,9 @@ import java.util.Map;
 
 public class AppleCake extends Block implements ICustomCake {
 
-    protected static final int SLICES = 6;
-    protected static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 6);
-    protected static final VoxelShape[] SHAPES = new VoxelShape[] {
+    private static final int SLICES = 6;
+    private static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 6);
+    private static final VoxelShape[] SHAPES = new VoxelShape[] {
             Block.makeCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 3.0D, 15.0D),
             Block.makeCuboidShape(3.0D, 0.0D, 1.0D, 15.0D, 3.0D, 15.0D),
             Block.makeCuboidShape(5.0D, 0.0D, 1.0D, 15.0D, 3.0D, 15.0D),
@@ -35,8 +35,8 @@ public class AppleCake extends Block implements ICustomCake {
             Block.makeCuboidShape(13.0D, 0.0D, 1.0D, 15.0D, 3.0D, 15.0D)
     };
 
-    private final static Properties properties = Properties.create(Material.CAKE).hardnessAndResistance(0.5F).sound(SoundType.CLOTH);
-    protected static final Map<Effect, Integer> effects = Maps.newHashMap();
+    private static final Properties properties = Properties.create(Material.CAKE).hardnessAndResistance(0.5F).sound(SoundType.CLOTH);
+    private static final Map<Effect, Integer> effects = Maps.newHashMap();
 
     static {
         effects.put(Effects.SATURATION, 5);

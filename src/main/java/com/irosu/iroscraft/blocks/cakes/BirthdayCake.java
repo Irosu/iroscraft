@@ -1,6 +1,5 @@
 package com.irosu.iroscraft.blocks.cakes;
 
-import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -20,14 +19,13 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 
-import java.util.List;
 import java.util.Map;
 
 public class BirthdayCake extends Block implements ICustomCake {
 
-    protected static final int SLICES = 7;
-    protected static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 7);
-    protected static final VoxelShape[] SHAPES = new VoxelShape[] {
+    private static final int SLICES = 7;
+    private static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 7);
+    private static final VoxelShape[] SHAPES = new VoxelShape[] {
             Block.makeCuboidShape(0.0001D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
             Block.makeCuboidShape(0.0001D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
             Block.makeCuboidShape(0.0001D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
@@ -38,8 +36,8 @@ public class BirthdayCake extends Block implements ICustomCake {
             Block.makeCuboidShape(8.0D, 0.0D, 8.0D, 12.0D, 10.0D, 16.0D)
     };
 
-    private final static Properties properties = Properties.create(Material.CAKE).hardnessAndResistance(0.5F).sound(SoundType.CLOTH);
-    protected static final Map<Effect, Integer> effects = Maps.newHashMap();
+    private static final Properties properties = Properties.create(Material.CAKE).hardnessAndResistance(0.5F).sound(SoundType.CLOTH);
+    private static final Map<Effect, Integer> effects = Maps.newHashMap();
 
     static {
         effects.put(Effects.HERO_OF_THE_VILLAGE, 500);

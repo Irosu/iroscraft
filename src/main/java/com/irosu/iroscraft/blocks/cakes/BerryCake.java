@@ -23,17 +23,17 @@ import java.util.Map;
 
 public class BerryCake extends Block implements ICustomCake {
 
-    protected static final int SLICES = 3;
-    protected static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 3);
-    protected static final VoxelShape[] SHAPES = new VoxelShape[] {
+    private static final int SLICES = 3;
+    private static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 3);
+    private static final VoxelShape[] SHAPES = new VoxelShape[] {
             Block.makeCuboidShape(4.0D, 0.0D, 4.0D, 12.0D, 2.0D, 12.0D),
             Block.makeCuboidShape(6.0D, 0.0D, 4.0D, 12.0D, 2.0D, 12.0D),
             Block.makeCuboidShape(8.0D, 0.0D, 4.0D, 12.0D, 2.0D, 12.0D),
             Block.makeCuboidShape(10.0D, 0.0D, 4.0D, 12.0D, 2.0D, 12.0D)
     };
 
-    private final static Properties properties = Properties.create(Material.CAKE).hardnessAndResistance(0.5F).sound(SoundType.CLOTH);
-    protected static final Map<Effect, Integer> effects = Maps.newHashMap();
+    private static final Properties properties = Properties.create(Material.CAKE).hardnessAndResistance(0.5F).sound(SoundType.CLOTH);
+    private static final Map<Effect, Integer> effects = Maps.newHashMap();
 
     static {
         effects.put(Effects.STRENGTH, 200);
