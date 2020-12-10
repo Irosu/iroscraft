@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "iroscraft:block/spanish_omelette"
+    },
+    "bites=1": {
+      "model": "iroscraft:block/spanish_omelette_slice1"
+    },
+    "bites=2": {
+      "model": "iroscraft:block/spanish_omelette_slice2"
+    },
+    "bites=3": {
+      "model": "iroscraft:block/spanish_omelette_slice3"
+    }
+  }
+}

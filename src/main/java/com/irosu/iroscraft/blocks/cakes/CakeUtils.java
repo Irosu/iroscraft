@@ -20,11 +20,10 @@ public class CakeUtils {
     public static ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player,
                                          Hand handIn, Map<Effect, Integer> effects, IntegerProperty bites, int slices) {
 
-        effects.forEach((effect, duration) -> player.addPotionEffect(new EffectInstance(effect, duration)));
-
         if (worldIn.isRemote) {
             ItemStack itemstack = player.getHeldItem(handIn);
             if (eatSlice(worldIn, pos, state, player, bites, slices).isSuccessOrConsume()) {
+                effects.forEach((effect, duration) -> player.addPotionEffect(new EffectInstance(effect, duration)));
                 return ActionResultType.SUCCESS;
             }
 
@@ -38,6 +37,7 @@ public class CakeUtils {
 
     private static ActionResultType eatSlice(IWorld world, BlockPos pos, BlockState state, PlayerEntity player,
                                       IntegerProperty bites, int slices) {
+
         if (!player.canEat(false)) {
             return ActionResultType.PASS;
         } else {

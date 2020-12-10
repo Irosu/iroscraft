@@ -21,7 +21,7 @@ import net.minecraft.world.World;
 
 import java.util.Map;
 
-public class SpanishOmellete extends Block implements ICustomCake {
+public class SpanishOmelette extends Block implements ICustomCake {
 
     private static final int SLICES = 3;
     private static final IntegerProperty BITES = IntegerProperty.create("bites", 0, SLICES);
@@ -40,7 +40,7 @@ public class SpanishOmellete extends Block implements ICustomCake {
         effects.put(Effects.LUCK, 500);
     }
 
-    public SpanishOmellete() {
+    public SpanishOmelette() {
         super(properties);
         StateContainer.Builder<Block, BlockState> builder = new StateContainer.Builder<>(this);
         super.fillStateContainer(builder);
